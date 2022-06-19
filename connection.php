@@ -1,6 +1,6 @@
 <?php
 
-    $severname = "localhost";
+    $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "chatroom";
