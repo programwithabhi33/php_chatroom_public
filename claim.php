@@ -12,7 +12,7 @@ if(strlen($room_name)>20 or strlen($room_name)<2){
     $_SESSION['main'] = true;
     $_SESSION['message'] = $message;
     $_SESSION['type'] = "warning";
-    header("Location:  https://ec8f-2402-8100-22d3-7f1f-24e7-95cd-381d-97cc.in.ngrok.io/php_chatroom/");
+    header("Location:    https://6c4f-2402-8100-22db-e33f-74b9-2b80-ad50-f7e1.in.ngrok.io/php_chatroom/");
 
 }
 
@@ -26,14 +26,13 @@ else if(!ctype_alnum($room_name)){
     $_SESSION['main'] = true;
     $_SESSION['message'] = $message;
     $_SESSION['type'] = "warning";
-    header("Location:  https://ec8f-2402-8100-22d3-7f1f-24e7-95cd-381d-97cc.in.ngrok.io/php_chatroom/");
+    header("Location:    https://6c4f-2402-8100-22db-e33f-74b9-2b80-ad50-f7e1.in.ngrok.io/php_chatroom/");
 
 }
 
 else{
     // Connecting the database
     include_once "connection.php";
-    echo "Lets chat now";
 }
 
 // Preparing the sql statement
@@ -54,7 +53,7 @@ if($result){
         $_SESSION['main'] = true;
         $_SESSION['message'] = $message;
         $_SESSION['type'] = "warning";
-        header("Location:  https://ec8f-2402-8100-22d3-7f1f-24e7-95cd-381d-97cc.in.ngrok.io/php_chatroom/");
+        header("Location:   https://6c4f-2402-8100-22db-e33f-74b9-2b80-ad50-f7e1.in.ngrok.io/php_chatroom/");
 
     }
 
@@ -70,7 +69,7 @@ if($result){
             $_SESSION['main'] = true;
             $_SESSION['message'] = $message;
             $_SESSION['type'] = "success";
-            header("Location:  https://ec8f-2402-8100-22d3-7f1f-24e7-95cd-381d-97cc.in.ngrok.io/php_chatroom/rooms.php?roomname=$room_name");
+            header("Location:    https://6c4f-2402-8100-22db-e33f-74b9-2b80-ad50-f7e1.in.ngrok.io/php_chatroom/rooms.php?roomname=$room_name");
         }
 }
 }
